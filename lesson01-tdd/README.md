@@ -4,6 +4,15 @@
 
 Imagine you are asked to build a frying pan. What kind of requirements would you want to include? How would make sure that the pan meets the requirements?
 
+I would want to include the following requirements:
+
+- The pan should be made of high-quality materials
+- The pan should be able to withstand high temperatures
+- The pan should be able to be used on a variety of surfaces
+- The pan should be able to be used for a variety of purposes
+
+I would make sure that the pan meets the requirements by doing trials of tests and making sure each requirement is met.
+
 ## Lecture Content (20 minutes)
 
 ### What is TDD?
@@ -14,10 +23,10 @@ Test-Driven Development (TDD) is a software development approach where tests are
 
 ```javascript
 // Failing test for sum function
-test("sum function should return the correct sum of two numbers", () => {
-  const result = sum(2, 3);
-  expect(result).toBe(5);
-});
+test('sum function should return the correct sum of two numbers', () => {
+  const result = sum(2, 3)
+  expect(result).toBe(5)
+})
 ```
 
 2. Green: Write the minimal code to make the test pass
