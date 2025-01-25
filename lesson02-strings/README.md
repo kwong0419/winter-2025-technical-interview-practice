@@ -4,6 +4,10 @@
 
 Today we'll be looking at a data type called "string." Why does data have different types? What are some advantages that would bring?
 
+- Different data types have different properties and methods that are used to manipulate the data.
+- Different data types have different memory requirements and storage capacities.
+- Different data types have different performance characteristics.
+
 ## Lecture Content (20 minutes)
 
 ### String Basics
