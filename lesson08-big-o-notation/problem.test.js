@@ -1,21 +1,43 @@
-const sumConsecutiveNumbers = require("./problem");
+const sumConsecutiveNumbers = require('./problem')
 
-test("sumConsecutiveNumbers should return 0 when n is 0", () => {
-  expect(sumConsecutiveNumbers(0)).toBe(0);
-});
+test('sumConsecutiveNumbers should return 0 when n is 0', () => {
+  expect(sumConsecutiveNumbers(0)).toBe(0)
+})
 
-test("sumConsecutiveNumbers should return 1 when n is 1", () => {
-  expect(sumConsecutiveNumbers(1)).toBe(1);
-});
+test('sumConsecutiveNumbers should return 1 when n is 1', () => {
+  expect(sumConsecutiveNumbers(1)).toBe(1)
+})
 
-test("sumConsecutiveNumbers should return 55 when n is 10", () => {
-  expect(sumConsecutiveNumbers(10)).toBe(55);
-});
+test('sumConsecutiveNumbers should return 55 when n is 10', () => {
+  expect(sumConsecutiveNumbers(10)).toBe(55)
+})
 
-test("sumConsecutiveNumbers should return 5050 when n is 100", () => {
-  expect(sumConsecutiveNumbers(100)).toBe(5050);
-});
+test('sumConsecutiveNumbers should return 5050 when n is 100', () => {
+  expect(sumConsecutiveNumbers(100)).toBe(5050)
+})
 
-test("sumConsecutiveNumbers should return 500500 when n is 1000", () => {
-  expect(sumConsecutiveNumbers(1000)).toBe(500500);
-});
+test('sumConsecutiveNumbers should return 500500 when n is 1000', () => {
+  expect(sumConsecutiveNumbers(1000)).toBe(500500)
+})
+
+const sumConsecutiveNumbersOptimized = require('./problem')
+
+test('sumConsecutiveNumbersOptimized should return 0 when n is 0', () => {
+  expect(sumConsecutiveNumbersOptimized(0)).toBe(0)
+})
+
+test('sumConsecutiveNumbersOptimized should return 1 when n is 1', () => {
+  expect(sumConsecutiveNumbersOptimized(1)).toBe(1)
+})
+
+test('sumConsecutiveNumbersOptimized should return 55 when n is 10', () => {
+  expect(sumConsecutiveNumbersOptimized(10)).toBe(55)
+})
+
+test('sumConsecutiveNumbersOptimized should return 5050 when n is 100', () => {
+  expect(sumConsecutiveNumbersOptimized(100)).toBe(5050)
+})
+
+test('sumConsecutiveNumbersOptimized should return 500500 when n is 1000', () => {
+  expect(sumConsecutiveNumbersOptimized(1000)).toBe(500500)
+})

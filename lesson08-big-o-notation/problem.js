@@ -7,6 +7,31 @@
  */
 function sumConsecutiveNumbers(n) {
   // Your code here
+  let sum = 0
+  for (let i = 1; i <= n; i++) {
+    sum += i
+  }
+  return sum
 }
+// Time Complexity: O(n)
+/* 
+The function uses a single loop that iterates from 1 to n
+Each iteration performs constant time operations (addition and increment)
+The number of operations grows linearly with the input n
+*/
+// Space Complexity: O(1)
+/* 
+The function only uses two variables regardless of input size:
+sum - a single number
+i - loop counter
+The space used remains constant no matter how large n becomes
+*/
 
-module.exports = sumConsecutiveNumbers;
+function sumConsecutiveNumbersOptimized(n) {
+  return (n * (n + 1)) / 2
+}
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+
+module.exports = sumConsecutiveNumbers
+module.exports = sumConsecutiveNumbersOptimized
