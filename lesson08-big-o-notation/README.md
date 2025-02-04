@@ -6,6 +6,8 @@
 
 (Allow students to write a brief response. This question helps set the stage for why big O notation is critical in computer science and software engineering.)
 
+It is important to analyze the efficiency of an algorithm because it helps us understand how well an algorithm performs under different conditions. For example, if we are searching for a number in an array, we can use a linear search to find the number. This is a simple algorithm that has a time complexity of O(n). However, if we are searching for a number in a sorted array, we can use a binary search to find the number. This is a more complex algorithm that has a time complexity of O(log n). In this case, the binary search is more efficient because it reduces the number of operations needed to find the number.
+
 ---
 
 ### Lecture Content (20 minutes)
