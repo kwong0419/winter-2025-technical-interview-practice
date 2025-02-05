@@ -16,7 +16,21 @@ console.log(areAnagrams("programming", "coding")); // Expected output: false
 */
 
 function areAnagrams(str1, str2) {
-  // Your code here
+  if (str1.length !== str2.length) return false
+  // Create a frequency hash map for str1
+  const charMap = {}
+
+  // Count frequency of characters in str1
+  for (let char of str1) {
+    charMap[char] = (charMap[char] || 0) + 1
+  }
+
+  // Check frequency of characters in str2
+  for (let char of str2) {
+    if (!charMap[char]) return false
+    charMap[char] -= 1
+  }
+  return true
 }
 
-module.exports = areAnagrams;
+module.exports = areAnagrams
