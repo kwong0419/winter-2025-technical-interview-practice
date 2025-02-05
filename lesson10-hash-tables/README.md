@@ -6,6 +6,20 @@
 
 What's better a hash table or an array? Explain.
 
+It depends on the use case.
+Arrays are better when:
+
+- You need sequential storage with direct indexing
+- Memory efficiency is crucial
+- You need to perform frequent insertions and deletions at the end of the array
+
+Hash tables are better when:
+
+- You need to store and retrieve data based on keys
+- You need fast lookups by key
+- You need to handle collisions efficiently
+- You need to perform frequent insertions and deletions at arbitrary positions
+
 ## Lecture Content (20 minutes)
 
 Dive deeper into hash table operations and performance tuning:

@@ -1,26 +1,21 @@
-const topKFrequent = require("/Users/paulgasbarra/Code/pursuit/dsa-coursework-l3-2025/lesson08-hash-tables/problem");
+const twoSum = require('./problem.js')
 
-// Test case 1: nums contains positive and negative numbers
-let nums = [1, -2, 2, 3, -3, 3, 3];
-let k = 2;
-console.log(topKFrequent(nums, k)); // Output: [3, -3]
+test('Returns indices of two numbers that add up to target', () => {
+  expect(twoSum([2, 7, 11, 15], 9)).toEqual([0, 1])
+})
 
-// Test case 2: nums contains duplicate elements
-nums = [1, 2, 2, 3, 3, 3];
-k = 3;
-console.log(topKFrequent(nums, k)); // Output: [3, 2, 1]
+test('Returns indices of two numbers that add up to target with negative numbers', () => {
+  expect(twoSum([-1, -2, -3, -4, -5], -8)).toEqual([2, 4])
+})
 
-// Test case 3: nums contains only one element
-nums = [7];
-k = 1;
-console.log(topKFrequent(nums, k)); // Output: [7]
+test('Returns indices of two numbers when they are not at the start', () => {
+  expect(twoSum([1, 3, 4, 2], 6)).toEqual([2, 3])
+})
 
-// Test case 4: nums contains all the same elements
-nums = [5, 5, 5, 5, 5];
-k = 1;
-console.log(topKFrequent(nums, k)); // Output: [5]
+test('Returns indices when the same number appears multiple times', () => {
+  expect(twoSum([3, 3], 6)).toEqual([0, 1])
+})
 
-// Test case 5: nums contains both positive and negative numbers with the same frequency
-nums = [-1, -1, 1, 1, 2, 2];
-k = 2;
-console.log(topKFrequent(nums, k)); // Output: [1, -1]
+test('Returns empty array when no solution exists', () => {
+  expect(twoSum([1, 2, 3, 4], 10)).toEqual([])
+})
