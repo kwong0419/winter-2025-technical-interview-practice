@@ -6,6 +6,10 @@
 
 Imagine you were charged with building a mail delivery robot for you office. The office is composed of cubicles that are all the same width and depth. The cubicles are arranged in rows and rows are evenly spaced apart. How might you instruct the robot to deliver mail to a cubicle by looking at a number on the package?
 
+Since the cubicles act as a grid/matrix, we can use the row and column to deliver the mail to the correct cubicle.
+To find the row, we use the package number divided (/) by the number of cubes per row - rounding down to the nearest integer.
+To find the column, we use the package number modulo (%) the number of cubes per row
+
 ## Lecture Content (20 minutes)
 
 Introduce the concept of hash tables, explaining how they use a hash function to compute an index into an array in which an element will be stored or searched. Cover the basics:
